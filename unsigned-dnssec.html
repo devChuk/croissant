@@ -8,17 +8,18 @@
     </head>
     <body>
         <h1>This is a web page that simulates <span class="red">unsigned</span> DNSSEC and <span class="green">matching</span> SRI.</h1>
-        <p>If you have SecureBrowse on, the icon should be red with unsafe HTML indicated. You shouldn't be able to view this at all since everything should be blocked.</p>
+        <p>If you have SecureBrowse on, the icon should be red with every resources stated as unsafe.</p>
         <p>Check out the other test pages here:<br>
             <a href="http://testsecurebrowse.org/good.html">good.html</a><br>
             <a href="http://testsecurebrowse.org/non-matching-sri/insecure-html.html">insecure-html.html</a><br>
             <a href="http://testsecurebrowse.org/non-matching-sri/insecure-js.html">insecure-js.html</a><br>
+            <a href="http://securebrowse.top/outdated-extension-version.html">outdated-extension-version.html</a><br>
         </p>
         <br><br>
         <p>If you'd like to see what the TXT record looks like, <a href="https://dns.google.com/resolve?name=brianch.uk&type=TXT">check it out here</a>.</p>
         <code id="json"></code>
         <br><hr><br>
-        <p>Site code. Note the script and link elements on the top and bottom. Integrity attributes generated with <a href="https://report-uri.com/home/sri_hash">ReportURI</a>.</p>
+        <p>Site code. Note the script and link elements on the top and bottom.</p>
         <code id="doc"></code>
         <script src="http://testsecurebrowse.org/a.js"></script>
         <script src="http://testsecurebrowse.org/b.js"></script>
